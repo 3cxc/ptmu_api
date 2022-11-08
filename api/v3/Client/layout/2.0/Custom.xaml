@@ -1,0 +1,36 @@
+﻿    
+<local:MyCard Title="信息">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="PTMU官方群：637446264 | 最新的整合包版本: v6.4" />
+	    <local:MyHint Text="警告: 需要加群并经过审核才能获取白名单！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="最新公告">
+    <StackPanel Margin="25,40,23,15">
+         <TextBlock Margin="0,0,0,4" Foreground="#0080FF"
+                   Text="更新了末日生存服！快来一起玩吧！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="可用功能">
+    <StackPanel Margin="25,40,23,15">
+         <TextBlock Margin="0,0,0,4" Foreground="#FFA500"
+                   Text="点击下面的按钮即可更新客户端！(最新版本为v6.4)" />
+         <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="点我更新客户端！" EventType="打开网页" EventData="http://api.mcptmu.cn:50509/public/api/v3/Client/download/mod/index.html" ToolTip="点我更新客户端！" />
+          <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="用于更新客户端布局文件" />
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="这里可以启动游戏">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Foreground="#0080FF"
+                 Text="点击下面的按钮就可以进入游戏啦~" />
+        <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                 Text="启动枪械客户端" EventType="启动游戏" EventData="枪械客户端(v6.4)" ToolTip="PTMU服务器IP: mcptmu.cn" />
+	<local:MyHint Text="警告: 在客户端反作弊(次元反作弊)加载的时候不要关掉加载框！关了游戏会炸！" />
+    </StackPanel>
+</local:MyCard>
